@@ -1,0 +1,2 @@
+crontab -e
+* * * * * curl wattr.in/Batman home/apprenant/Documents/D03/meteoOfTheDay.txt

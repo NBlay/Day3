@@ -1,0 +1,33 @@
+    1  cd /home/
+    2  sudo bash wifi_activation.sh
+    3  ping google.fr
+    4  cd Documents/
+    5  git clone https://github.com/NBlay/D03.git
+    6  cd D03/
+    7  ls
+    8  mkdir ex00
+    9  cd ex00/
+   10  ls
+   11  vi histoire.txt
+   12  vi SortedList.sh
+   13  tr -s " " "\n" < histoire.txt | grep -c
+   14  tr -s " " "\n" < histoire.txt | wc
+   15  tr -s " " "\n" < histoire.txt | wc -w
+   16  for w in 'history.txt'; do echo $w; done|sort|uniq -c
+   17  awk '{for(w=1;w<=NF;w++) print $w}' history.txt | sort | uniq -c | sort -nr
+   18  awk '{for(w=1;w<=NF;w++) print $w}' ~/history.txt | sort | uniq -c | sort -nr
+   19  awk '{for(w=1;w<=NF;w++) print $w}' ~/history.txt | sort | uniq -c | sort -n
+   20  ls
+   21  awk '{for(w=1;w<=NF;w++) print $w}' /history.txt | sort | uniq -c | sort -n
+   22  awk '{for(w=1;w<=NF;w++) print $w}' /histoire.txt | sort | uniq -c | sort -n
+   23  awk '{for(w=1;w<=NF;w++) print $w}' histoire.txt | sort | uniq -c | sort -n
+   24  awk '{for(w=1;w<=NF;w++) print $w}' histoire.txt | sort | uniq -c | sort -a
+   25  awk '{for(w=1;w<=NF;w++) print $w}' histoire.txt | sort | uniq -c | sort -r
+   26  ls
+   27  vi SortedList.sh 
+   28  cd ..
+   29  mkdir ex01
+   30  cd ex01
+   31  cd ..
+   32  cd ex00
+   33  history >> cmd_history.txt

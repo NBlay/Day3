@@ -1,0 +1,6 @@
+Pour envoyer: 
+nc -w 3 192.168.1.229 1080 <  ex02.png
+
+pour recevoir
+nc -l 113
+
